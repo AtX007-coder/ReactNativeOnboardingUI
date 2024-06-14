@@ -27,7 +27,7 @@ const OnBoardingScreen = () => {
             image: (
               <View style={styles.lottieContainer}>
                 <LottieView
-                  style={{flex: 1}}
+                  style={styles.lottieImageStyle}
                   source={require('../../assets/lottieAnimations/sample1.json')}
                   autoPlay
                   loop
@@ -43,7 +43,7 @@ const OnBoardingScreen = () => {
             image: (
               <View style={styles.lottieContainer}>
                 <LottieView
-                  style={{flex: 1}}
+                  style={styles.lottieImageStyle}
                   source={require('../../assets/lottieAnimations/sample2.json')}
                   autoPlay
                   loop
@@ -59,7 +59,7 @@ const OnBoardingScreen = () => {
             image: (
               <View style={styles.lottieContainer}>
                 <LottieView
-                  style={{flex: 1}}
+                  style={styles.lottieImageStyle}
                   source={require('../../assets/lottieAnimations/sample4.json')}
                   autoPlay
                   loop
@@ -82,7 +82,11 @@ const styles = StyleSheet.create({
   },
   lottieContainer: {
     width: width * 0.9,
-    height: width * 0.9,
+    height: width,
+  },
+  lottieImageStyle: {
+    flex: 1,
+    marginBottom: 10,
   },
 });
 
